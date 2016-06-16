@@ -1,7 +1,7 @@
 # EBI Java Developer Test
 This application solves the problem stated in https://gist.github.com/mnowotka/ea119ab19add7cddbcfa9b01d0b55c7b 
 
-#How to use
+###How to use
 To execute the application please go to ./build and execute:
 
     java -jar inchi.jar [N]
@@ -10,7 +10,7 @@ Where N is an optional parameter used to indicate how many matches should the pr
 
 The jar was compiled by Eclipse and is targeted for java 1.7.
 
-#Complexity
+###Complexity
 To reduce dictionary matching times a Trie was used. A Trie search complexity is O(M). Where M is the length of the longest word in the dictionary. However, to reduce the space usage instead of hash tables the implementation uses TreeMap. Which results in a complexity of:
 
     O(M*log(MAX_CHARS+1))
@@ -27,7 +27,7 @@ Which leads to a final complexity of:
 
 Where N is the number of lines in the chemical components database.
 
-#How to test
+###How to test
 Import the project in Eclipse and go to the package ebi.jfmx2.test and Run the ComplexityTest.java file as a JUnit test.
 
 Don't forget to include the dictionary and the chem database in the following paths to reduce networking interference during the test.
