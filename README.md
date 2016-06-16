@@ -27,6 +27,8 @@ Which leads to a final complexity of:
 
 Where N is the number of lines in the chemical components database.
 
+To reduce execution time the GZIP file containing the chemical components database is uncompressed while it is being downloaded by concatenating a GZIPInputStream and the URL InputStream.
+
 ###How to test
 Import the project in Eclipse and go to the package ebi.jfmx2.test and Run the ComplexityTest.java file as a JUnit test.
 
