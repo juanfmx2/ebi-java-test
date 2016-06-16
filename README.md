@@ -21,14 +21,14 @@ In order to use the Trie to realize matching with each InChI key. The Trie has t
 
     O(INCHI_KEY_LENGTH*M*log(MAX_CHARS+1))
 
-Which lead to a final complexity of:
+Which leads to a final complexity of:
 
     O(N*INCHI_KEY_LENGTH*M*log(MAX_CHARS+1))
 
 Where N is the number of lines in the chemical components database.
 
 #How to test
-Import the project in Eclipse and go to the package ebi.jfmx2.test and Run the ComplexityTest.java file as JUnit test.
+Import the project in Eclipse and go to the package ebi.jfmx2.test and Run the ComplexityTest.java file as a JUnit test.
 
 Don't forget to include the dictionary and the chem database in the following paths to reduce networking interference during the test.
 
